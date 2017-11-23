@@ -21,7 +21,7 @@ h3	{
 	padding: 10px 20px 20px 20px;
 }
 footer{
-    position: absolute;
+    position: inherit;
     bottom: 0;
 }
 
