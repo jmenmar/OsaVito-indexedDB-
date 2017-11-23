@@ -6,16 +6,19 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>OSAVITO</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/index.css" type="text/css" media="all" />
+        <script type="text/javascript" src="js/checkLoginPaciente.js"></script>
     </head>
     <body background="img/background.png">
         <h1><img src="./img/osavitoM.png" alt="OsaVito"></h1>
-        <center>Escoger perfil</center></br>
-            <p><center><button class="button button2" type="submit" value="Admin" onclick = "location='/osavito03/loginAdmin.html'">Admin</button>
-            <button class="button button2" type="submit" value="Paciente" onclick = "location='/osavito03/loginPaciente.html'">Paciente</button></center>
+        <form name="loginAdmin" method="post">
+            <center>TIS: <input type="number" name="tis" id="tis" placeholder="Número de la TIS" required=""/></center></br>
+            <center>FechaNacimiento: <input type="date" name="fecha" min="1990-01-01" max="2017-11-20" id="fecha" required=""/></center></br>
+            <center><input type="submit" value="Login" onclick="redirect();"/></center>
+        </form>
         <footer>Copyright &copy;OsaVito03</footer>
     </body>
 </html>

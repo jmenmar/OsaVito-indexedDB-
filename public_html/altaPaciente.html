@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alta Paciente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="required.css">  
+    
+    </head>
+    <body background="img/background.png">
+        <h1><img src="./img/osavitoM.png" alt="OsaVito"></h1>
+        <form name="altaPaciente" method="get">
+        ALTA PACIENTE
+        <p>Nombre:<input type="text" name="nombre" id="nombre" required=""/>
+        <p>TIS:<input type="tel" pattern="[0-9]{8}"  name="TIS" id="TIS" required=""  />
+        <p>FechaNacimiento:<input type="date" name="fecha" min="1990-01-01" max="2017-11-20" id="fecha" required=""/>
+        <p>Elige tu sexo:
+            <input type="radio" name="radioSexo" value="H" required="" />Hombre
+            <input type="radio" name="radioSexo" value="M" required=""/>Mujer
+            <input type="radio" name="radioSexo" value="O" required=""/>Otros
+        <p>Telf. Movil:<input type="tel" pattern="[0-9]{9}" name="telefono" id="telefono" required=""/>   
+        <p>Foto:  <input type="image" name="Foto" id="Foto" />(DRAG AND DROP TODO)
+        <p>&emsp;&emsp;&emsp;&emsp;<input type="submit" value="ALTA" />
+            &emsp;&emsp;<input type="reset" value="BORRAR"/>
+         </form> 
+        <footer>Copyright &copy;OsaVito03</footer>
+    </body>
+</html>

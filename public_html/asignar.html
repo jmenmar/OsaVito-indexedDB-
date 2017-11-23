@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/altaSanitario.css" type="text/css" media="all"/>
+        <script type="text/javascript" src="js/checkAsignar.js"></script>
+    </head>
+    <body background="img/background.png">
+        <h1><img src="./img/osavitoM.png" alt="OsaVito"></h1>
+        <section>
+            <form name="altaSanitario" method="get">
+                <h2>
+                    Asignar paciente a sanitario:</br></br>
+                    TIS: <input type="number" name="tis" id="tis" required=""/></br></br>
+                    Elige Tipo: 
+                    <datalist id="tipoSanitario">
+                        <option value="01" label="Médico/a">
+                        <option value="02" label="Enfermero/a">
+                        <option value="03" label="Matron/a">
+                    </datalist>
+                    <input type="tel" name="tipo" id="tipoSanitario" list="tipoSanitario" placeholder="Elige tipo" required=""/></br></br>
+                    Numero Colegiado:
+                    <datalist id="localidad">
+                        <option value="01" label="Araba/Álava">
+                        <option value="20" label="Gipuzkoa">
+                        <option value="48" label="Bizkaia">
+                    </datalist>
+                    <input type="tel" name="localidad" id="localidad" list="localidad" required=""/>/
+                    <input type="tel" pattern='[0-9]{7}' name="numcol" id="numcol" required=""/></br></br>
+                    <input type="submit" value="Asignar" /> 
+                </h2>
+            </form>
+        </section>
+        <footer>Copyright &copy;OsaVito03</footer>
+    </body>
+</html>

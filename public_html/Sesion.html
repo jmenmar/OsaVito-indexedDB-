@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sesion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/sesion.css" type="text/css" media="all" />
+    </head>
+    <body background="img/background.png">
+        <h1><img src="./img/osavitoM.png" alt="OsaVito"></h1>
+        <h2>
+            Bienvenido @paciente
+            <input type="button" value="Logout" style="float: right;"/> </br>
+            TIS:</br>
+        </h2>
+        <section>
+            <form>
+                <form name="registracion" method="get">
+                    <h3>
+                        PEDIR CITA</br></br>
+                        Elige Sanitario:
+                        <datalist id="sanitario">
+                            <option value="Médico/a" label=" ">
+                            <option value="Enfermero/a" label=" ">
+                            <option value="Matrón/a" label=" ">
+                        </datalist>
+                        <input type="tel" name="tipo" id="movil" list="sanitario" placeholder="Tipo de sanitario" required=""/>
+                        <p>Fecha: <input type="date" name="fecha" min="2017-11-01" max="2018-02-01" id="fecha" required=""/>
+                        <p>Horario: 
+                            <datalist id="hora">
+                                <option value="09" label=" ">
+                                <option value="10" label=" ">
+                            </datalist>
+                            <input type="tel" name="hora" id="selecthora" list="hora" placeholder="Hora" required=""/>
+                            <datalist id="min">
+                                <option value="00" label=" ">
+                                <option value="15" label=" ">
+                                <option value="30" label=" ">
+                                <option value="45" label=" ">
+                            </datalist>
+                            <input type="tel" name="min" id="selectmin" list="min" placeholder="Min" required=""/></br></br></br>
+                            <input type="submit" value="Pedir cita" />
+                            <input type="reset" value="Borrar"/>
+                    </h3>
+                </form>
+            </section>
+        <footer>Copyright &copy;OsaVito03</footer>
+    </body>
+</html>
